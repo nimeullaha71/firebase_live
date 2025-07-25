@@ -97,21 +97,21 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         },
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: () {
-      //     LiveScoreModel liveScoreModel = LiveScoreModel(
-      //         title: 'gervseng',
-      //         team1: "Germany",
-      //         team2: 'England',
-      //         team1Score: 3,
-      //         team2Score: 1,
-      //         winnerTeam: '',
-      //         isRunning: true
-      //     );
-      //     db.collection("football").doc(liveScoreModel.title).set(liveScoreModel.toJson());
-      //   },
-      //   child: Icon(Icons.add),
-      // ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          LiveScoreModel liveScoreModel = LiveScoreModel(
+              title: 'gervseng',
+              team1: "Germany",
+              team2: 'England',
+              team1Score: 3,
+              team2Score: 1,
+              winnerTeam: '',
+              isRunning: true
+          );
+          db.collection("football").doc(liveScoreModel.title).set(liveScoreModel.toJson());
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }

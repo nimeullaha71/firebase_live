@@ -28,16 +28,16 @@ class LiveScoreModel{
         isRunning: jsonData['isRunning']);
   }
 
-  // Map<String,dynamic> toJson(){
-  //   return{
-  //     'team1' : team1,
-  //     'team2' : team2,
-  //     'team1_score' : team1Score,
-  //     'team2_score' : team2Score,
-  //     'winner_team' : winnerTeam,
-  //     'isRunning' : isRunning,
-  //   };
-  // }
+  Map<String,dynamic> toJson(){
+    return{
+      'team1' : team1,
+      'team2' : team2,
+      'team1_score' : team1Score,
+      'team2_score' : team2Score,
+      'winner_team' : winnerTeam,
+      'isRunning' : isRunning,
+    };
+  }
 
 
 }
